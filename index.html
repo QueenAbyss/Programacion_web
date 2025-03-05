@@ -10,42 +10,161 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo Universidad" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">La Universidad</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Programas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Investigación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                </ul>
+<!-- Navbar superior -->
+<nav class="navbar navbar-expand-lg top-navbar " style="background-color: #08550b;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="topNavbar">
+            <div class="d-flex flex-wrap align-items-center">
+                <a href="#" class="text-white"><img src="img/gov-co.jpg" width="60" alt="Inscripciones" class="img-fluid"></a>
+                <a href="#" class="text-white"><img src="img/emisora.png" width="60" alt="Inscripciones" class="img-fluid">escucha la emisora 98.1 FM</a>
+                <a href="#" class="text-white"><img src="img/idioma.png" width="20" alt="Inscripciones" class="img-fluid">Español ▼</a>
+            </div>
+            <div class="d-flex social-icons">
+                <a href="https://www.facebook.com/uniamazonia.edu.co"><img src="img/Facebook .png" alt="Facebook" class="me-2" width="24"title="visitanos en Facebook"></a>
+                <a href="https://twitter.com/uniamazonia"><img src="img/X.png" alt="Twitter" class="me-2" width="24"title="visitanos en X"></a>
+                <a href="https://www.instagram.com/uniamazonia/"><img src="img/Instagram.png" alt="Instagram" class="me-2" width="24"title="visitanos en Instagram"></a>
+                <a href="https://www.youtube.com/c/uamazonia"><img src="img/Youtube.png" alt="YouTube" width="24"title="visitanos en Youtube"></a>
+                <a href="https://www.tiktok.com/@uniamazonia"><img src="img/Tiktok.png" alt="YouTube" width="24"title="visitanos en Tiktok"></a>
             </div>
         </div>
-    </nav>
-    
+    </div>
+</nav>
+
+
+<!-- Navbar -->
+<nav class="fijo navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="img/Logo.jpg" alt="Logo Universidad">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="universidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">LA UNIVERSIDAD</a>
+                    <ul class="dropdown-menu" aria-labelledby="universidadDropdown">
+                        <li><a class="dropdown-item" href="#">Presentación</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/organigrama.html">Organigrama</a></li>
+                        <li><a class="dropdown-item" href="#">Normativa</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/perfil-de-funcionarios.html">Perfil funcionarios</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PROGRAMAS</a>
+                    <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                        <li><a class="dropdown-item" href="#">Pregrados</a></li>
+                        <li><a class="dropdown-item" href="#">Posgrados</a></li>
+                        <li><a class="dropdown-item" href="#">Educación Continuada</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="gestionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GESTIÓN</a>
+                    <ul class="dropdown-menu" aria-labelledby="gestionDropdown">
+                        <li><a class="dropdown-item" href="#">Control y rendición de cuentas</a></li>
+                        <li><a class="dropdown-item" href="#">Contratación</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/gestion-institucional/plan-de-desarrollo-institucional.html">Plan de desarrollo institucional</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/atencion-al-ciudadano.html">Atención al ciudadano</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/atencion-al-ciudadano/peticiones-quejas-y-reclamos.html">Peticiones,Quejas y reclamos</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/foros-de-discusion.html">Foros de discusión</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/radio-en-linea.html">Radio en línea</a></li>
+                        <li><a class="dropdown-item" href="https://www.funcionpublica.gov.co/dafpIndexerBT/tramite/index?find=FindNext&query=tramites+universidad+de+la+amazonia&filtroEntidad=0370&filtroSector=&filtroDepartamento=&filtroMunicipio=18001&bloquearFiltroEntidad=&bloquearFiltroSector=&bloquearFiltroDepartamento=&bloquearFiltroMunicipio=">Tramites Uniamazonia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="convocatoriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CONVOCATORIAS</a>
+                    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/convocatorias/ofertas-de-empleo.html">Ofertas de empleo</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/convocatorias/invitaciones-a-contratar.html">Invitaciones a contratar</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/convocatorias/elecciones.html">Elecciones</a></li>
+                        <li><a class="dropdown-item" href="https://chaira.uniamazonia.edu.co/GestionProveedores/Vistas/Privado/Inicio.aspx">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="investigacionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">INVESTIGACION</a>
+                    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <li><a class="dropdown-item" href="#">Biblioteca</a></li>
+                        <li><a class="dropdown-item" href="#">Centro de Idiomas</a></li>
+                        <li><a class="dropdown-item" href="#">Unidad de Emprendimiento</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sedesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
+                    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/sedes/sede-guaviare.html">Sede Guaviare</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/sedes/sede-putumayo.html">Sede Putumayo</a></li>
+                        <li><a class="dropdown-item" href="https://www.uniamazonia.edu.co/inicio/index.php/es/sedes/sede-leticia.html">Sede Leticia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia-y-acceso-a-informacion-publica.html">TRANSPARENCIA</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Barra de iconos con imágenes y buscador responsivo -->
+<div class="fijo2 icon-bar d-flex flex-wrap justify-content-center align-items-center py-2 ">
+    <a href="https://chaira.uniamazonia.edu.co/Chaira/Logon.aspx"> <img src="img/chaira.png" class="icon" data-bs-toggle="tooltip" title="Ingreso a Chairá"></a>
+   <a href="https://www.uniamazonia.edu.co/inicio/index.php/ingreso-al-correo.html"><img src="img/correo.png" class="icon" data-bs-toggle="tooltip" title="Ingreso al correo"></a>
+    <a href="https://aulaextendida.uniamazonia.edu.co/aulaextendida/"><img src="img/aulaextendida.png" class="icon" data-bs-toggle="tooltip" title="Aula Extendida"></a>
+    <a href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano.html"><img src="img/atencionciudadano.png" class="icon" data-bs-toggle="tooltip" title="Atención al ciudadano"></a>
+    <a href="https://drive.google.com/drive/folders/1YNysDUoRnLb46wUsdFO0nVXcO8dnjAIM"><img src="img/sigc.png" class="icon" data-bs-toggle="tooltip" title="SIGC"></a>
+    <a href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/invitaciones-a-contratar.html"><img src="img/invitacion.png" class="icon" data-bs-toggle="tooltip" title="Invitaciones"></a>
+    <a href="https://chaira.uniamazonia.edu.co/oari/Vistas/Publico/Principal.aspx#"><img src="img/oari.png" class="icon" data-bs-toggle="tooltip" title="Convenios OARI"></a>
+    <a href="https://uniamazonia.integrasoftsas.co:8085/"><img src="img/bpm.png" class="icon" data-bs-toggle="tooltip" title="BPM.gov"></a>
+    <a href="https://www.colombiacompra.gov.co/secop-ii"><img src="img/SecopII.jpg" class="icon" data-bs-toggle="tooltip" title="SECOP II"></a>
+    <div class="search-box d-flex align-items-center ms-3">
+        <input type="text" class="form-control" placeholder="Buscar...">
+        <button class="btn btn-danger ms-2">Buscar</button>
+    </div>
+</div>
     <!-- Banner Principal -->
     <header class="container mt-4">
-        <div class="row w-100">
+        <div class="row">
             <div class="col-12">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleInterval" class="carousel slide anchocarrusel" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="img/noticias2.jpg" height="300px" class="d-block  w-100  " alt="...">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12477-lleva-tu-emprendimiento-al-siguiente-nivel-2.html">
+                      <img src="img/carrusel1.jpg" height="300px" class="d-block  w-100  " alt="..."></a>
                       </div>
-                      <div class="carousel-item" data-bs-interval="1000">
-                        <img src="img/noticias1.jpg" height="300px" class="d-block w-100" alt="...">
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12451-un-nuevo-comienzo-un-nuevo-desafio.html">
+                            <img src="img/carrusel2.png" height="300px" class="d-block w-100" alt="...">
+                        </a> 
                       </div>
-                      <div class="carousel-item" data-bs-interval="1000">
-                        <img src="img/noticias3.jpg" height="300px" class="d-block w-100" alt="...">
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/20-direccion/rectoria/oficina-de-acreditacion.html">
+                          <img src="img/carrusel3.jpg" height="300px" class="d-block w-100" alt="..."></a>
+                     </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12411-informate-y-participa-en-nuestro-proceso-de-acreditacion-institucional.html">
+                            <img src="img/carrusel4.jpg" height="300px" class="d-block w-100" alt="...">
+                        </a> 
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12446-convocatoria-abierta-y-permanente.html">
+                            <img src="img/carrusel5.jpg" height="300px" class="d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12508-un-encuentro-para-la-historia.html">
+                            <img src="img/carrusel6.jpg" height="300px" class="d-block w-100" alt="...">
+                        </a>
+                       
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -61,132 +180,398 @@
             </div>
         </div>
     </header>
-<!-- 
-    Secciones Destacadas -->
-    
+<!--  Secciones Destacadas -->
     <section class="container mt-4">
         <div class="row text-center">
             <div class="col-md-3 col-6 mb-3">
-                <img src="img/inscripciones.png" alt="Inscripciones" class="img-fluid">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">
+                    <img src="img/Inscripciones.png" alt="Inscripciones" class="img-fluid"></a>
+                
             </div>
             <div class="col-md-3 col-6 mb-3">
-                <img src="img/aspirantes.png" alt="Aspirantes" class="img-fluid">
+                <a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">
+                    <img src="img/Aspirantes.png" alt="Aspirantes" class="img-fluid"></a>
+                
             </div>
             <div class="col-md-3 col-6 mb-3">
-                <img src="img/estudiantes.png" alt="Estudiantes" class="img-fluid">
+                <a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/231-estudiantesd.html">
+                 <img src="img/Estudiantes.png" alt="Estudiantes" class="img-fluid"></a>
+                
             </div>
             <div class="col-md-3 col-6 mb-3">
-                <img src="img/graduados.png" alt="Graduados" class="img-fluid">
+                <a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/direccion/oficinas/portal-de-graduados.html">
+                <img src="img/Graduados.png" alt="Graduados" class="img-fluid"></a>
+                
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html">
+                    <img src="img/Calendario.png" alt="Calendario" class="img-fluid">
+                </a>
+                
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia-y-acceso-a-informacion-publica.html">
+                    <img src="img/transparencia.png" alt="Transparencia" class="img-fluid">
+                </a>
+     
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-biblioteca-e-informacion-cientifica/190-direccion-biblioteca-e-informacion-cientifica.html">
+                    <img src="img/OPAC.png" alt="Inscripciones" class="img-fluid">
+                </a>
+                
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx"> 
+            <img src="img/pqrsd.png" alt="Inscripciones" class="img-fluid"></a>
+               
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/participa.html">
+                    <img src="img/Participa.png" alt="Inscripciones" class="img-fluid"></a>
+                
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <a href="https://www.uniamazonia.edu.co/Inicio/index.php/gestion-institucional/contratacion/estatuto-de-contratacion.html">
+                    <img src="img/Contratacion11.png" alt="Inscripciones" class="img-fluid"></a>
+                
             </div>
         </div>
     </section>
-    
-    
-    <section class="container mt-4">
-        <h2 class="text-center">Últimas Noticias</h2>
-        <div class="row">
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12521-natacion-uniamazonia.html">
-                        <img src="img/noticias1.jpg" class="card-img-top w-100" alt="Noticia 1"></a> 
-                    <div class="card-body">
-                        <h5 class="card-title">Natación Uniamazonia</h5>
-                        <p class="card-text">Consulta los horarios de entrenamiento.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
+    <!--  Noticias destacadas  -->
+<section class="container mt-4 border border-success rounded p-4 shadow-sm">
+    <h2 class="text-center text-success fw-bold">Últimas Noticias</h2>
+    <div class="row">
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12521-natacion-uniamazonia.html">
+                    <img src="img/noticias1.jpg" class="card-img-top w-100" alt="Noticia 1"></a> 
+                <div class="card-body">
+                    <h5 class="card-title text-success">Natación Uniamazonia</h5>
+                    <p class="card-text">¡Nada hacia tus metas! Consulta los horarios de entrenamiento de Natación y sumérgete con...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12521-natacion-uniamazonia.html" class="btn btn-outline-success">Leer más</a>
                 </div>
             </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias2.jpg" class="card-img-top w-100" alt="Noticia 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Unidos por la biodiversidad</h5>
-                        <p class="card-text">Día Mundial de la Vida Silvestre.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12522-unidos-por-la-biodiversidad.html">
+                    <img src="img/noticias2.jpg" class="card-img-top w-100" alt="Noticia 2"></a>
+                
+                <div class="card-body">
+                    <h5 class="card-title text-success">Unidos por la biodiversidad</h5>
+                    <p class="card-text">Día Mundial de la Vida Silvestre. #GestiónEInvestigaciónParaElDesarrolloDeLaAmazonia</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12522-unidos-por-la-biodiversidad.html" class="btn btn-outline-success">Leer más</a>
                 </div>
             </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias3.jpg" class="card-img-top w-100" alt="Noticia 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Día Mundial del Reciclaje</h5>
-                        <p class="card-text">Un llamado a la acción por un planeta sostenible.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12526-universidad-de-la-amazonia-recolecta-esperanza.html">
+                    <img src="img/noticias3.jpg" class="card-img-top w-100" alt="Noticia 3"></a>
+                
+                <div class="card-body">
+                    <h5 class="card-title text-success">Atención accesible con servicio de interpretación en Lenguas de Señas Colombiana</h5>
+                    <p class="card-text">Atención accesible con servicio de interpretación en...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12526-universidad-de-la-amazonia-recolecta-esperanza.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12517-movilidad-internacional-un-puente-hacia-el-conocimiento-y-nuevas-oportunidades.html">
+                    <img src="img/noticias4.jpeg" class="card-img-top w-100" alt="Noticia 4"></a>
+                
+                <div class="card-body">
+                    <h5 class="card-title text-success">MOVILIDAD INTERNACIONAL: UN PUENTE HACIA EL CONOCIMIENTO Y NUEVAS OPORTUNIDADES</h5>
+                    <p class="card-text">La Universidad de la Amazonia se enorgullece en destacar la valiosa experiencia de Nelson...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12517-movilidad-internacional-un-puente-hacia-el-conocimiento-y-nuevas-oportunidades.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12519-dia-mundial-del-reciclaje.html"><img src="img/noticias5.jpg" class="card-img-top w-100" alt="Noticia 5"></a>
+                <div class="card-body">
+                    <h5 class="card-title text-success">Día Mundial del Reciclaje</h5>
+                    <p class="card-text">Día Mundial del Reciclaje: Un Llamado Global a la Acción por un Planeta más Sostenible...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12519-dia-mundial-del-reciclaje.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12515-futbol-uniamazonia.html"><img src="img/noticias6.jpg" class="card-img-top w-100" alt="Noticia 6"></a>
+                
+                <div class="card-body">
+                    <h5 class="card-title text-success">Fútbol UniAmazonia</h5>
+                    <p class="card-text">¡Vive tu pasión por el fútbol! Consulta los horarios de entrenamiento de Fútbol sala para...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12515-futbol-uniamazonia.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12516-jornada-de-formacion-en-recursos-para-la-academia-y-la-investigacion-con-consorcio-colombia.html"><img src="img/noticias7.jpg" class="card-img-top w-100" alt="Noticia 7"></a>
+                <div class="card-body">
+                    <h5 class="card-title text-success">Jornada de Formación en Recursos para la Academia y la Investigación con Consorcio Colombia</h5>
+                    <p class="card-text">Consulta los horarios de entrenamiento.</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12516-jornada-de-formacion-en-recursos-para-la-academia-y-la-investigacion-con-consorcio-colombia.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12514-jornada-de-salud-de-la-universidad-de-la-amazonia.html"><img src="img/noticias8.jpg" class="card-img-top" alt="Noticia 8"></a>
+                <div class="card-body">
+                    <h5 class="card-title text-success">Jornada de Salud de la Universidad de la Amazonia</h5>
+                    <p class="card-text">Día Mundial de la Vida Silvestre.</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12514-jornada-de-salud-de-la-universidad-de-la-amazonia.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card border border-success shadow-sm">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12513-carrera-de-la-mujer-2.html"><img src="img/noticias9.jpg" class="card-img-top" alt="Noticia 9"></a>
+                <div class="card-body">
+                    <h5 class="card-title text-success">Carrera de la mujer</h5>
+                    <p class="card-text">¡Corre por la igualdad y el poder femenino! La Dirección de Bienestar Universitario y el Área...</p>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12513-carrera-de-la-mujer-2.html" class="btn btn-outline-success">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Información Adicional -->
+<section class="container mt-5">
+    <div class="row">
+        <!-- Columna Izquierda -->
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3 mb-4">
+                <h5 class="fw-bold">Enlaces Institucionales</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/2013-08-14-20-35-02.html" class="text-dark">Salas y Vehículos</a></li>
+                    <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php?option=com_wrapper&view=wrapper&Itemid=263" class="text-dark">Vista 360</a></li>
+                    <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/extension.html" class="text-dark">Extensión</a></li>
+                    <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/sg-sst.html" class="text-dark">SG-SST</a></li>
+                    <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/naf.html" class="text-dark">NAF</a></li>
+                </ul>
+            </div>
+            <div class="text-center mb-4">
+                <h5 class="fw-bold">Síguenos en Facebook</h5>
+                <a href="https://www.facebook.com/uniamazonia.edu.co"><img src="img/facebook2.png" class="img-fluid rounded shadow" alt="Facebook"></a>
+            </div>
+            <div class="text-center">
+                <h5 class="fw-bold">Trámites Uniamazonia</h5>
+                <img src="img/tramites.png"  class="img-fluid rounded shadow" alt="Trámites">
+            </div>
+        </div>
+
+        <!-- Columna Central con Tarjetas -->
+        <div class="col-md-6">
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <img src="img/Caminoacreditacion.jpg" class="card-img-top" alt="Acreditación">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <img src="img/Transparencia4.png" class="card-img-top" alt="Transparencia">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <img src="img/Plan_de_Desarrollo2020.jpg" class="card-img-top" alt="Plan de Desarrollo">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <img src="img/sistemadeinfo.png" class="card-img-top" alt="Sistema Normativa">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias4.jpeg" class="card-img-top h-100" alt="Noticia 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Natación Uniamazonia</h5>
-                        <p class="card-text">Consulta los horarios de entrenamiento.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
+
+        <!-- Columna Derecha con Accordion y Video -->
+        <div class="col-md-3">
+            <div class="text-center mb-4">
+                <h5 class="fw-bold">Canal en YouTube</h5>
+                <div class="ratio ratio-16x9 shadow-sm">
+                    <iframe src="https://www.youtube.com/embed/BH8azKgncwk?list=PLOvyGQVi5ZCke6lNjz40tySyvtBWIRFs2" 
+                        title="YouTube video" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias5.jpg" class="card-img-top w-100" alt="Noticia 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Unidos por la biodiversidad</h5>
-                        <p class="card-text">Día Mundial de la Vida Silvestre.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+            <div class="accordion shadow-sm" id="repositorioAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Publica con Nosotros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#repositorioAccordion">
+                        <div class="accordion-body">Información sobre publicación.</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias6.jpg" class="card-img-top w-100" alt="Noticia 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Día Mundial del Reciclaje</h5>
-                        <p class="card-text">Un llamado a la acción por un planeta sostenible.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Periódico Virtual
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#repositorioAccordion">
+                        <div class="accordion-body">Detalles del Periódico Virtual.</div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias7.jpg" class="card-img-top w-100" alt="Noticia 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Natación Uniamazonia</h5>
-                        <p class="card-text">Consulta los horarios de entrenamiento.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias8.jpg" class="card-img-top" alt="Noticia 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Unidos por la biodiversidad</h5>
-                        <p class="card-text">Día Mundial de la Vida Silvestre.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 mb-3">
-                <div class="card">
-                    <img src="img/noticias9.jpg" class="card-img-top" alt="Noticia 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Día Mundial del Reciclaje</h5>
-                        <p class="card-text">Un llamado a la acción por un planeta sostenible.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Plan de Desarrollo
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#repositorioAccordion">
+                        <div class="accordion-body">Información sobre el Plan de Desarrollo.</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> 
-    
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center p-3 mt-4">
-        <p>&copy; 2025 Universidad de la Amazonia. Todos los derechos reservados.</p>
-    </footer>
+    </div>
+</section>
+
+    <!-- Sección de Enlaces Institucionales y Categorías -->
+<section class="container mt-5 custom-border">
+    <div class="row">
+        <div class="col-md-4">
+            <h5 class="fw-bold text-danger">Atención al ciudadano</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx" class="text-success link-hover">PQRS-D</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano/glosario.html" class="text-success link-hover">Glosario</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/preguntas-y-respuestas-frecuentes/relacionadas-con-campus-n-g.html" class="text-success link-hover">Preguntas Frecuentes</a></li>
+                <li><a href="https://www.funcionpublica.gov.co/dafpIndexerBT/tramite/index?find=FindNext&query=tramites+universidad+de+la+amazonia&filtroEntidad=0370&filtroSector=&filtroDepartamento=&filtroMunicipio=18001&bloquearFiltroEntidad=&bloquearFiltroSector=&bloquearFiltroDepartamento=&bloquearFiltroMunicipio=" class="text-success link-hover">Trámites Uniamazonia</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html" class="text-success link-hover">Política de Privacidad</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html" class="text-success link-hover">Mapa del Sitio</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/notificaciones-por-aviso.html" class="text-success link-hover">Notificaciones por aviso</a></li>
+            </ul>
+            <h5 class="fw-bold text-danger">Servicios</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://uniamazonia.gestionjuridica.com/au/cjv" class="text-success link-hover">Consultorio jurídico y centro de conciliacion virtual</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-biblioteca-e-informacion-cientifica.html" class="text-success link-hover">Biblioteca</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/investigacion/editorial.html" class="text-success link-hover">Editorial uniamazonia</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/investigacion/unidades-de-apoyo-a-la-investigacion/69-consultorio-contable-tributario.html" class="text-success link-hover">Consultorio contable tributario</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/naf.html" class="text-success link-hover">Nucleos de apoyo contable y fiscal (NAF)</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/investigacion/unidades-de-apoyo-a-la-investigacion/87-consultorio-juridico.html" class="text-success link-hover">Consultorio Jurídico</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/investigacion/unidades-de-apoyo-a-la-investigacion/86-centro-de-conciliacion.html" class="text-success link-hover">Centro de conciliación</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/dependencias/otras-dependencias/centro-de-idiomas.html" class="text-success link-hover">Centro de idiomas</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/dependencias/otras-dependencias/unidad-de-emprendimiento.html" class="text-success link-hover">Unidad de emprendimiento</a></li>
+                <li><a href="https://chaira.uniamazonia.edu.co/administrativo/Vistas/Privado/Proveedores/Inicio.aspx" class="text-success link-hover">Proveedores</a></li>
+                
+            </ul>
+            <h5 class="fw-bold text-danger">¿Donde estamos?</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/la-universidad/presentacion/localizacion-fisica-de-las-sedes.html" class="text-success link-hover">Programas en otras ciudades</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5 class="fw-bold text-danger">Aplicaciones Web</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/118-inscripciones.html" class="text-success link-hover">Inscripciones (Pregrado y Posgrado)</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/servicios-de-informacion/noticias-y-eventos/117-academia/7154-liquidacion.html" class="text-success link-hover">Liquidación</a></li>
+                <li><a href="https://uniamazonia.janium.net/opac" class="text-success link-hover">Catálogo en Línea (OPAC)</a></li>
+                <li><a href="https://chaira.uniamazonia.edu.co/sigepi/Default.aspx" class="text-success link-hover">SIGEPI</a></li>
+            </ul>
+            <h5 class="fw-bold text-danger mt-3">Descubre la Universidad</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/normativa/marco-juridico.html" class="text-success link-hover">Marco Jurídico</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/gestion-institucional/control-y-rendicion-de-cuentas/informes-de-gestion.html" class="text-success link-hover">Rendición de Cuentas</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Plan%20de%20desarrollo%202020%20-%202029/PDI%202020%20-2029.pdf" class="text-success link-hover">Plan de Desarrollo PDI</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/participa.html" class="text-success link-hover">Participa</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/portal-para-ninos.html" class="text-success link-hover">Portal para niños</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/ofertas-de-empleo.html" class="text-success link-hover">Ofertas de empleo</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5 class="fw-bold text-danger">Información Institucional</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/la-universidad/normativa/estatutos/2016-01-13-21-40-16.html" class="text-success link-hover">Estatuto General</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/normativa/estatutos/2016-01-13-21-34-14.html" class="text-success link-hover">Estatuto Docente</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/la-universidad/normativa/estatutos/2013-11-01-16-33-57.html" class="text-success link-hover">Estatuto Estudiantil</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/gestion-institucional/contratacion/estatuto-de-contratacion.html" class="text-success link-hover">Estatuto de Contratación</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-de-biblioteca.html" class="text-success link-hover">Estatuto de Biblioteca</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-del-investigador.html" class="text-success link-hover">Estatuto del Investigador</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-electoral.html" class="text-success link-hover">Estatuto de electoral</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-presupuestal.html" class="text-success link-hover">Estatuto de presupuestal</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-de-posgrados.html" class="text-success link-hover">Estatuto del Posgrados</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2023/Acuerdo%20085%20-%20Actualizacion%20Politica%20Modelo%20de%20Bienestar%20Universitario.pdf" class="text-success link-hover">Politicas de bienestar universitario</a></li>
+            </ul>
+            <h5 class="fw-bold text-danger">Programas</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/pregrado.html" class="text-success link-hover">Pregrados</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/posgrado.html" class="text-success link-hover">Posgrados</a></li>
+                <li><a href="https://chaira.uniamazonia.edu.co/AcademicoV3/Vistas/Publico/Evento/Evento.aspx" class="text-success link-hover">Educación continuada</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html" class="text-success link-hover">Calendario académico</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico.html" class="text-success link-hover">Admisiones y registro</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/normativa/valores-de-matriculas-y-derechos-pecuniarios-y-complementarios.html" class="text-success link-hover">Tarifas / Derechos Pecunarios</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/228-aspirantes/2839-instructivos-de-los-procesos-academicos.html" class="text-success link-hover">Instructivos - Derechos académicos</a></li>
+                
+            </ul>
+
+
+        </div>
+    </div>
+</section>
+   <!-- Footer  -->
+<footer class="bg-dark text-light py-5 mt-4">
+    <div class="container">
+        <div class="row text-center text-md-start align-items-center">
+            <div class="col-12 col-md-12 mb-3 text-center">
+                <div class="d-flex flex-wrap justify-content-center justify-content-md-between">
+                    <img src="img/minciencias.jpg" alt="Icono 1" class="img-fluid mx-2" width="100">
+                    <img src="img/gov_co.png" alt="Icono 2" class="img-fluid mx-2" width="80">
+                    <img src="img/ICFES.png" alt="Icono 3" class="img-fluid mx-2" width="80">
+                    <img src="img/logo jovenes en accion.jpg" alt="Icono 4" class="img-fluid mx-2" width="80">
+                    <img src="img/icetex.png" alt="Icono 5" class="img-fluid mx-2" width="80">
+                    <img src="img/mineducacion1.png" alt="Icono 6" class="img-fluid mx-2" width="80">
+                    <img src="img/AgenciapublicaEmpleo.png" alt="Icono 7" class="img-fluid mx-2" width="80">
+                </div>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <div class="row text-center text-md-start">
+            <div class="col-md-6 mb-3">
+                <p class="fw-bold">Universidad de la Amazonia</p>
+                <p class="mb-1">Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir</p>
+                <p class="mb-1">Atención al público: Lunes a Viernes de 7:30 a.m. a 11:30 a.m. y de 1:30 p.m. a 5:30 p.m.</p>
+                <p class="mb-1">Contacto: <a href="mailto:atencionciudadana@uniamazonia.edu.co" class="text-light">atencionciudadana@uniamazonia.edu.co</a></p>
+                <p class="mb-1">Vigilada por el Ministerio de Educación Nacional</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-1">Visitas: Hoy 0 | Este mes 0 | Total: 38994</p>
+                <p class="mb-1">Última Actualización: 04-03-2025 07:16:34</p>
+                <p class="mb-1">Florencia, Caquetá, Colombia, Suramérica</p>
+                <div class="d-flex justify-content-center justify-content-md-end">
+                    <a href="https://aulaextendida.uniamazonia.edu.co/aulaextendida/" class="btn btn-outline-light btn-sm mx-2">Aula Extendida</a>
+                    <a href="https://distancia.uniamazonia.edu.co/distancia" class="btn btn-outline-light btn-sm mx-2">Ingreso a Campus Virtual</a>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/ingreso-al-correo.html" class="btn btn-outline-light btn-sm mx-2">Ingreso al correo</a>
+                    <a href="https://chaira.uniamazonia.edu.co/Chaira/Logon.aspx" class="btn btn-outline-light btn-sm mx-2">Ingreso a Chairá</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
